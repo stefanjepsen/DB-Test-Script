@@ -23,7 +23,6 @@ CREATE TABLE Employee (
     Gender varchar(1) NOT NULL,
     BirthDate DATE NOT NULL,
     DepartmentID int NOT NULL
-
 );
 
 
@@ -32,8 +31,7 @@ CREATE TABLE Department (
     Name varchar(255) NULL,
     EmployeeID int NOT NULL,
     LocationID int NOT NULL,
-    LastName varchar(255) NULL
-
+    LastName VARCHAR(255) NULL
 );
 
 CREATE TABLE ProjectID(
@@ -41,8 +39,6 @@ CREATE TABLE ProjectID(
     Name varchar(255) NULL,
     DepartmentID int NOT NULL,
     LocationID int NOT NULL
-    
-
 );
 
 CREATE TABLE WorksOn (
@@ -50,5 +46,4 @@ CREATE TABLE WorksOn (
     ProjectID int NOT NULL,
     Hours float NULL,
     CONSTRAINT PK_WorksOn PRIMARY KEY (EmployeeID, ProjectID)
-
 );
